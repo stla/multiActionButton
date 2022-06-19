@@ -26,10 +26,15 @@ subButton(
 \item{iconSize}{icon size, can be \code{"lg"}, \code{"2x"}, \code{"3x"},
 \code{"4x"} or \code{"5x"}}
 
-\item{tooltip}{character string to show as tooltip}
+\item{tooltip}{character string to be shown as tooltip}
 
-\item{onclick}{\code{onclick} attribute}
+\item{onclick}{the \code{onclick} attribute of the button}
+}
+\value{
+A \code{shiny.tag} object for usage in
+  \code{\link{multiActionButton}}.
 }
 \description{
-Creates a sub-button for usage in \code{\link{multiActionButton}}
+Creates a sub-button for usage in
+  \code{\link{multiActionButton}}.
 }

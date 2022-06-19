@@ -28,8 +28,11 @@ button}
 
 \item{subButtons}{a list of buttons created with \code{\link{subButton}}}
 }
+\value{
+A \code{shiny.tag} object to be included in a Shiny UI.
+}
 \description{
-Creates a multi action button for usage in a Shiny UI.
+Multi action button for usage in a Shiny UI.
 }
 \examples{
 if(interactive()){

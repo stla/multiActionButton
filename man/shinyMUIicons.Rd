@@ -6,6 +6,9 @@
 \usage{
 shinyMUIicons()
 }
+\value{
+No returned value, the function just launches a Shiny app.
+}
 \description{
 Launch a shiny app displaying all available metro UI icons.
 }

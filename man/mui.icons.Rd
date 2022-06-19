@@ -7,8 +7,8 @@
 mui.icons()
 }
 \value{
-A character vector of length 686.
+A character vector of length 686, the names of the available icons.
 }
 \description{
-Returns the vector of all available icons.
+Available metro UI icons.
 }

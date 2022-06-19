@@ -6,6 +6,9 @@
 \usage{
 shinyMUIcolors()
 }
+\value{
+No returned value, the function just launches a Shiny app.
+}
 \description{
-Launch a shiny app showing all available metro UI background colors.
+Shiny app showing all available metro UI background colors.
 }

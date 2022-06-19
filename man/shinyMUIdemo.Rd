@@ -6,6 +6,9 @@
 \usage{
 shinyMUIdemo()
 }
+\value{
+No returned value, this function just runs a Shiny app.
+}
 \description{
-Launch a shiny app demonstrating the multi action button.
+Shiny app demonstrating the multi action button.
 }

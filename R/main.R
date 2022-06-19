@@ -1,5 +1,6 @@
 #' Sub-button
-#' @description Creates a sub-button for usage in \code{\link{multiActionButton}}
+#' @description Creates a sub-button for usage in
+#'   \code{\link{multiActionButton}}.
 #'
 #' @param id button id
 #' @param bg background color of the button
@@ -7,8 +8,11 @@
 #' @param icon icon name
 #' @param iconSize icon size, can be \code{"lg"}, \code{"2x"}, \code{"3x"},
 #'   \code{"4x"} or \code{"5x"}
-#' @param tooltip character string to show as tooltip
-#' @param onclick \code{onclick} attribute
+#' @param tooltip character string to be shown as tooltip
+#' @param onclick the \code{onclick} attribute of the button
+#'
+#' @return A \code{shiny.tag} object for usage in
+#'   \code{\link{multiActionButton}}.
 #'
 #' @importFrom htmltools tags
 #' @export
@@ -41,7 +45,7 @@ subButton <- function(
 
 
 #' Multi action button
-#' @description Creates a multi action button for usage in a Shiny UI.
+#' @description Multi action button for usage in a Shiny UI.
 #'
 #' @param rotate logical, whether to rotate the icon upon clicking the main
 #'   button
@@ -51,6 +55,8 @@ subButton <- function(
 #' @param direction the opening direction, \code{"top"}, \code{"right"},
 #'   \code{"bottom"}, or \code{"left"}
 #' @param subButtons a list of buttons created with \code{\link{subButton}}
+#'
+#' @return A \code{shiny.tag} object to be included in a Shiny UI.
 #'
 #' @importFrom htmltools tags htmlDependency attachDependencies
 #' @export
@@ -66,8 +72,8 @@ multiActionButton <- function(
   rotate <- ifelse(rotate, "rotate-minus ", "")
   bg <- if(!is.null(bg)) match.arg(bg, mui.bgcolors())
   fg <- if(!is.null(fg)) match.arg(fg, mui.fgcolors())
-  icon <- match.arg(icon, mui.icons())
-  icon <- sprintf("mif-%s", icon)
+  icon <- if(!is.null(icon)) sprintf("mif-%s", match.arg(icon, mui.icons()))
+  direction <- match.arg(direction, c("top", "right", "bottom", "left"))
   ultag <- function(...){
     tags$ul(
       class = sprintf("actions drop-%s", direction),
@@ -108,7 +114,9 @@ multiActionButton <- function(
 
 
 #' Shiny app: multi action button
-#' @description Launch a shiny app demonstrating the multi action button.
+#' @description Shiny app demonstrating the multi action button.
+#'
+#' @return No returned value, this function just runs a Shiny app.
 #'
 #' @importFrom shiny shinyAppDir
 #' @export

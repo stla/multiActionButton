@@ -1,7 +1,7 @@
 #' Metro UI icons
-#' @description Returns the vector of all available icons.
+#' @description Available metro UI icons.
 #'
-#' @return A character vector of length 686.
+#' @return A character vector of length 686, the names of the available icons.
 #' @export
 mui.icons <- function(){
   c(
@@ -697,7 +697,9 @@ mui.icons <- function(){
 #' Shiny app: metro UI icons
 #' @description Launch a shiny app displaying all available metro UI icons.
 #'
-#' @import shiny
+#' @return No returned value, the function just launches a Shiny app.
+#'
+#' @importFrom shiny shinyAppDir
 #' @export
 shinyMUIicons <- function(){
   appDir <- system.file("shinyapps", "icons", package = "multiActionButton")

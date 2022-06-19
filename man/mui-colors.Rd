@@ -10,8 +10,9 @@ mui.bgcolors()
 mui.fgcolors()
 }
 \value{
-The vector of available colors.
+A character vector, the names of the available background and
+  foreground colors.
 }
 \description{
-Returns the vector of available colors.
+Available metro UI colors.
 }

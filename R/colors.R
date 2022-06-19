@@ -1,7 +1,8 @@
 #' Metro UI colors
-#' @description Returns the vector of available colors.
+#' @description Available metro UI colors.
 #'
-#' @return The vector of available colors.
+#' @return A character vector, the names of the available background and
+#'   foreground colors.
 #' @export
 #' @rdname mui-colors
 mui.bgcolors <- function(){
@@ -43,9 +44,11 @@ mui.fgcolors <- function(){
 }
 
 #' Shiny app: metro UI background colors
-#' @description Launch a shiny app showing all available metro UI background colors.
+#' @description Shiny app showing all available metro UI background colors.
 #'
-#' @import shiny
+#' @return No returned value, the function just launches a Shiny app.
+#'
+#' @importFrom shiny shinyAppDir
 #' @export
 shinyMUIcolors <- function(){
   appDir <- system.file("shinyapps", "colors", package = "multiActionButton")
