@@ -14,8 +14,7 @@ shinyUI(
           direction = "right",
           subButtons = lapply(chunk, function(color){
             subButton(
-              color, bg = color, icon = "plus", iconSize = "3x",
-              tooltip = color
+              color, bg = color, icon = "plus", tooltip = color
             )
           })
         ))

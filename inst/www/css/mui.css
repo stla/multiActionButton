@@ -10,22 +10,18 @@
   white-space: nowrap;
   vertical-align: middle;
   -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+          user-select: none;
   border: 1px solid transparent;
   font-size: 0.875rem;
   -webkit-transition: all 0.15s ease-in-out;
-  -o-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
   background-color: #ebebeb;
   color: #1d1d1d;
   cursor: pointer;
-  outline: 0;
+  outline: none;
   position: relative;
-  -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16),
-    0 2px 5px 0 rgba(0, 0, 0, 0.26);
-  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+          box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26);
 }
 .mui-action-button .icon {
   width: 20px;
@@ -45,9 +41,8 @@
   width: 40px;
   height: 40px;
   line-height: 40px;
-  -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16),
-    0 2px 5px 0 rgba(0, 0, 0, 0.26);
-  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+          box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26);
 }
 .mui-action-button.second .icon {
   width: 16px;
@@ -57,18 +52,16 @@
   margin-top: 0;
 }
 .mui-action-button.prime {
-  -webkit-box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19),
-    0 8px 17px 0 rgba(0, 0, 0, 0.2);
-  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19), 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19), 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19), 0 8px 17px 0 rgba(0, 0, 0, 0.2);
 }
 .mui-action-button:active {
-  -webkit-box-shadow: 0 17px 50px 0 rgba(0, 0, 0, 0.19),
-    0 12px 15px 0 rgba(0, 0, 0, 0.24);
-  box-shadow: 0 17px 50px 0 rgba(0, 0, 0, 0.19),
-    0 12px 15px 0 rgba(0, 0, 0, 0.24);
+  -webkit-box-shadow: 0 17px 50px 0 rgba(0, 0, 0, 0.19), 0 12px 15px 0 rgba(0, 0, 0, 0.24);
+          box-shadow: 0 17px 50px 0 rgba(0, 0, 0, 0.19), 0 12px 15px 0 rgba(0, 0, 0, 0.24);
 }
 .multi-action {
   display: inline-block;
+  vertical-align: middle;
   position: relative;
   width: 56px;
   height: 56px;
@@ -81,7 +74,7 @@
 .multi-action .actions {
   position: absolute;
   list-style: none inside none;
-  margin: 0;
+  margin: 0 0 0 0;
   padding: 0;
   width: auto;
   float: left;
@@ -99,19 +92,16 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16),
-    0 2px 5px 0 rgba(0, 0, 0, 0.26);
-  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+          box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26);
   margin: 0;
   background: #989898;
-  color: #fff;
+  color: #ffffff;
   -webkit-transform: scale(0.2);
-  -ms-transform: scale(0.2);
-  transform: scale(0.2);
+          transform: scale(0.2);
   line-height: 40px;
   font-size: 20px;
   -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
   cursor: pointer;
 }
@@ -127,24 +117,21 @@
   text-decoration: none;
 }
 .multi-action .actions li:active {
-  -webkit-box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19),
-    0 8px 17px 0 rgba(0, 0, 0, 0.2);
-  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19), 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19), 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19), 0 8px 17px 0 rgba(0, 0, 0, 0.2);
 }
-.multi-action .actions.drop-down,
-.multi-action .actions.drop-left,
 .multi-action .actions.drop-right,
+.multi-action .actions.drop-left,
+.multi-action .actions.drop-down,
 .multi-action .actions.drop-up {
-  top: 8px !important;
-  left: 8px !important;
+  top: 8px!important;
+  left: 8px!important;
 }
 .multi-action .mui-action-button.active ~ .actions li {
   -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
   -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
+          transform: scale(1);
 }
 .multi-action .mui-action-button.active ~ .actions li:nth-child(1) {
   margin-top: -56px;
@@ -284,30 +271,13 @@
 }
 .multi-action .mui-action-button .icon {
   -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
 }
 .multi-action .mui-action-button.active.rotate .icon {
   -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 .multi-action .mui-action-button.active.rotate-minus .icon {
   -webkit-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-}
-.mui-action-button.floating-action-top,
-.multi-action.floating-action-top {
-  z-index: 1080;
-  top: 90px;
-  left: 16px;
-  position: fixed;
-}
-.mui-action-button.floating-action-bottom,
-.multi-action.floating-action-bottom {
-  z-index: 1080;
-  bottom: 20px;
-  right: 20px;
-  position: fixed;
+          transform: rotate(-45deg);
 }

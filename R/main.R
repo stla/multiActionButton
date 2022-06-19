@@ -6,8 +6,6 @@
 #' @param bg background color of the button
 #' @param fg color of the icon
 #' @param icon icon name
-#' @param iconSize icon size, can be \code{"lg"}, \code{"2x"}, \code{"3x"},
-#'   \code{"4x"} or \code{"5x"}
 #' @param tooltip character string to be shown as tooltip
 #' @param onclick the \code{onclick} attribute of the button
 #'
@@ -17,7 +15,7 @@
 #' @importFrom htmltools tags
 #' @export
 subButton <- function(
-  id, bg = NULL, fg = NULL, icon = NULL, iconSize = "3x",
+  id, bg = NULL, fg = NULL, icon = NULL,
   tooltip = NULL, onclick = NULL
 ){
   bg <- if(!is.null(bg)) match.arg(bg, mui.bgcolors())
@@ -25,18 +23,18 @@ subButton <- function(
   if(!is.null(icon)){
     icon <- match.arg(icon, mui.icons())
     icon <- sprintf("mif-%s", icon)
-    iconSize <- match.arg(iconSize, c("lg", "2x", "3x", "4x", "5x"))
-    iconSize <- sprintf("mif-%s", iconSize)
+    # iconSize <- match.arg(iconSize, c("lg", "2x", "3x", "4x", "5x"))
+    # iconSize <- sprintf("mif-%s", iconSize)
   }
   tags$li(
     class = paste0(sprintf("bg-%s ", bg), sprintf("fg-%s", fg)),
     tags$a(
       id = id,
       href = "#",
-      class = "action-button mui-action-button",
+      class = "action-button",
       onclick = onclick,
       tags$span(
-        class = sprintf("%s %s", icon, iconSize),
+        class = icon, #sprintf("%s %s", icon, iconSize),
         title = tooltip
       )
     )
@@ -99,12 +97,12 @@ multiActionButton <- function(
   )
   dep <- htmlDependency(
     name = "metroUI",
-    version = "4.3.10",
+    version = "4.5.0",
     src = "www",
     stylesheet = c(
-      "css/mui.css",
       "css/metro-colors.min.css",
-      "css/metro-icons.min.css"
+      "css/metro-icons.min.css",
+      "css/mui.css"
     ),
     package = "multiActionButton",
     all_files = TRUE

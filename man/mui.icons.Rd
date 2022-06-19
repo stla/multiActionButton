@@ -7,8 +7,11 @@
 mui.icons()
 }
 \value{
-A character vector of length 686, the names of the available icons.
+A character vector of length 700, the names of the available icons.
 }
 \description{
 Available metro UI icons.
+}
+\examples{
+matrix(mui.icons(), ncol = 4L, byrow = TRUE)
 }

@@ -15,18 +15,19 @@ shinyUI(
       direction = "right",
       subButtons = list(
         subButton(
-          "user-plus", bg = "blue",   icon = "user-plus", iconSize = "3x"
+          "user-plus", bg = "blue",   icon = "user-plus"
         ),
         subButton(
-          "library",   bg = "teal",   icon = "library",   iconSize = "3x"
+          "library",   bg = "teal",   icon = "library"
         ),
         subButton(
-          "alarm",     bg = "pink",   icon = "alarm",     iconSize = "3x"
+          "alarm",     bg = "pink",   icon = "alarm"
         ),
         subButton(
-          "power",     bg = "lime",   icon = "power",     iconSize = "3x"),
+          "power",     bg = "lime",   icon = "power"
+        ),
         subButton(
-          "lock",      bg = "orange", icon = "lock",      iconSize = "3x"
+          "lock",      bg = "orange", icon = "lock"
         )
       )
     ),

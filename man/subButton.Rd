@@ -9,7 +9,6 @@ subButton(
   bg = NULL,
   fg = NULL,
   icon = NULL,
-  iconSize = "3x",
   tooltip = NULL,
   onclick = NULL
 )
@@ -22,9 +21,6 @@ subButton(
 \item{fg}{color of the icon}
 
 \item{icon}{icon name}
-
-\item{iconSize}{icon size, can be \code{"lg"}, \code{"2x"}, \code{"3x"},
-\code{"4x"} or \code{"5x"}}
 
 \item{tooltip}{character string to be shown as tooltip}
 
