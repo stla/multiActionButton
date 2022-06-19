@@ -42,38 +42,12 @@ mui.fgcolors <- function(){
     "darkMauve", "darkTaupe", "darkGray", "darkGrayBlue")
 }
 
-#' Shiny app displaying the metro 4 background colors
-#' @description Launch a shiny app showing all available metro 4 background colors.
+#' Shiny app: metro UI background colors
+#' @description Launch a shiny app showing all available metro UI background colors.
 #'
 #' @import shiny
 #' @export
-shinyMetroUIcolors <- function(){
-  colorsChunks <- matrix(mui.bgcolors(), ncol = 7L)
-  shinyApp(
-    ui = fluidPage(
-      tags$fieldset(
-        tags$legend(
-          h1(style = "display: inline-block;", "Metro 4 colors"),
-          helpText(
-            style = "display: inline-block;",
-            "(hover the buttons to see the color names)"
-          )
-        ),
-        do.call(tagList, apply(colorsChunks, 1L, function(chunk){
-          div(multiActionButton(
-            rotate = TRUE, bg = "black", fg = "white", icon = "plus",
-            direction = "right",
-            subButtons = lapply(chunk, function(color){
-              subButton(
-                color, bg = color, icon = "plus", iconSize = "3x",
-                tooltip = color
-              )
-            })
-          ))
-        }))
-      ),
-      tags$script(HTML("$('.multi-action>button').addClass('active')"))
-    ),
-    server = function(input, output){}
-  )
+shinyMUIcolors <- function(){
+  appDir <- system.file("shinyapps", "colors", package = "multiActionButton")
+  shinyAppDir(appDir)
 }
