@@ -1,7 +1,7 @@
 Type: Package
 Package: multiActionButton
-Title: A Multi Action Button for 'Shiny' Applications
-Version: 0.1.0
+Title: Multi Action Button for 'Shiny' Applications
+Version: 1.0.0
 Authors@R: c(
     person("Stéphane", "Laurent", , "laurent_step@outlook.fr", role = c("aut", "cre")),
     person("Sergey", "Pimenov", role = "cph",
